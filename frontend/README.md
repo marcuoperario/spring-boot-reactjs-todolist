@@ -5,7 +5,7 @@ This is the frontend of Listify that allows users to create, read, update, and d
 - [Vite.js](https://vitejs.dev/): A build tool that provides fast and efficient building and bundling of front-end applications.
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that allows developers to rapidly build custom user interfaces.
 
-## Running the Todo list web application
+# Running the web application
 1. Make sure you have Node.js installed on your machine
 2. Open the Visual Studio Code or the IntelliJ Ultimate IDE
 3. Go to the frontend/src/constants directory
@@ -17,7 +17,7 @@ This is the frontend of Listify that allows users to create, read, update, and d
   npm install
 ```
 
-6. Run the web application application with running this command in the terminal:
+7. Run the web application application with running this command in the terminal:
 - Note: Terminal must be in the frontend directory
 ```bash
   npm run dev
