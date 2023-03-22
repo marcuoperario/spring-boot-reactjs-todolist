@@ -7,15 +7,14 @@ import {
 } from "react-icons/all";
 
 const Todo = ({ values, onUpdate, refetch, onDelete }: any) => {
+  const { entry, id, isCompleted } = values;
   const [ mutation, setMutation ] = useState({
-    id: values.id,
-    entry: values.entry,
-    isCompleted: values.isCompleted,
+    id: id,
+    entry: entry,
+    isCompleted: isCompleted,
   });
   const [ isEditing, setIsEditing ] = useState<boolean>(false);
   const [ operation, setOperation ] = useState<boolean>(false);
-  const { entry, id, isCompleted } = values;
-
   return (
     <div className="flex flex-row justify-between items-center bg-[#334056] rounded-lg p-4 my-2">
       <div className="flex flex-row justify-center items-center space-x-2 grow">
