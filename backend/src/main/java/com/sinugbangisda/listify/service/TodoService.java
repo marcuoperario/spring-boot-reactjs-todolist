@@ -18,7 +18,7 @@ public class TodoService {
         return repository.save(todo);
     }
 
-    public List<Todo> findAllTodos() {
+    public List<Todo> getAllTodos() {
         return repository.findAll();
     }
 
@@ -27,7 +27,7 @@ public class TodoService {
     }
 
     public List<Todo> getTodosByIsCompleted(boolean isCompleted) {
-        return repository.findTodosByIsCompleted(isCompleted);
+        return repository.getTodosByIsCompleted(isCompleted);
     }
 
     public Todo updateTodo(Todo todoRequest, String id) {

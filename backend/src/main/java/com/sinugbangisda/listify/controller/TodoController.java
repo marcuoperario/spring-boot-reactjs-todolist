@@ -17,13 +17,13 @@ public class TodoController {
 
     @PostMapping("new")
     @ResponseStatus(HttpStatus.CREATED)
-    public Todo createTodo(@RequestBody Todo todo) {
+    public Todo addTodo(@RequestBody Todo todo) {
         return service.addTodo(todo);
     }
 
     @GetMapping("all")
-    public List<Todo> getTodos() {
-        return service.findAllTodos();
+    public List<Todo> getAllTodos() {
+        return service.getAllTodos();
     }
 
     @GetMapping("{id}")
@@ -32,12 +32,12 @@ public class TodoController {
     }
 
     @GetMapping("completed={isCompleted}")
-    public List<Todo> findTodoByIsCompleted(@PathVariable("isCompleted") boolean isCompleted) {
+    public List<Todo> getTodosByIsCompleted(@PathVariable("isCompleted") boolean isCompleted) {
         return service.getTodosByIsCompleted(isCompleted);
     }
 
     @PutMapping("{id}")
-    public Todo modifyTodo(@RequestBody Todo todo, @PathVariable("id") String id) {
+    public Todo updateTodo(@RequestBody Todo todo, @PathVariable("id") String id) {
         return service.updateTodo(todo, id);
     }
 
