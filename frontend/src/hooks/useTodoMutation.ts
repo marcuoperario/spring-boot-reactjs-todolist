@@ -13,19 +13,11 @@ const initTodoValues = {
 };
 
 const useTodoMutation = () => {
-  const [ todos, setTodos ] = useState<TodoObject[]>([]);
   const [ todoValues, setTodoValues ] = useState<TodoObject>(initTodoValues);
 
   const handleChange = ({
     target: { name, value },
   }: ChangeEvent<HTMLInputElement>) => {
-    const updated = todos.map((todo) => {
-      if (todo.id === todoValues.id) {
-        return { ...todo, entry: value };
-      }
-      return todo;
-    });
-    setTodos(updated);
     setTodoValues((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -100,14 +92,11 @@ const useTodoMutation = () => {
     return response;
   };
 
-  const handleSelect = (value: TodoObject) => setTodoValues(value);
-
   return {
     handleChange,
     handleDelete,
     handleSubmit,
     handleUpdate,
-    handleSelect,
     todoValues,
   };
 };
