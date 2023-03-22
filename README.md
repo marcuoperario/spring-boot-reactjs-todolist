@@ -21,9 +21,9 @@ The following technologies were used:
 - Integration with various third-party libraries and tools, such as Lombok and Maven
 
 # Challenges Faced
-- Responsive Styling the frontend with Tailwind CSS
-- Deeply nested components and unproper structure
-- Data typing in TypeScript
+- Responsive Styling the frontend with Tailwind CSS (fixed)
+- Deeply nested components and unproper structure (fixed)
+- Data typing in TypeScript (fixed)
 
 # Future Features
 - User authentication and authorization
