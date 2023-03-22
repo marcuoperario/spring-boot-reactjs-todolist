@@ -13,19 +13,17 @@ const useGetTodos = () => {
   const fetchTodos = useCallback(async () => {
     const response = await fetch(`${BASE_URLS.todo}/todos/all`)
       .then((res) => res.json())
-      .then(async (values) => {
-        setData((prev) => ({ ...prev, todos: values, isLoading: false }));
+      .then((values) => {
+        setData(({ todos: values, isLoading: false, error: false }));
       })
       .catch((err) => {
         console.log(err);
-        setData((prev) => ({
-          ...prev,
+        setData({
           todos: [],
           isLoading: false,
           error: true,
-        }));
+        });
       });
-      return response;
   }, [ data.isLoading ]);
 
   const refetch = () => setData((prev) => ({ ...prev, isLoading: true }));
