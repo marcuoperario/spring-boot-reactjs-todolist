@@ -14,7 +14,7 @@ The following technologies were used:
 - [MongoDB Atlas](https://www.mongodb.com/atlas): A fully managed cloud database service provided by MongoDB.
 
 # System Architecture 
-
+![0](./docs/system_architecture.png)
 # Current Features
 - Create, read, update, and delete (CRUD) operations for todo items
 - Responsive UI design for desktop and mobile devices using Tailwind CSS
@@ -41,7 +41,28 @@ The following are tools and software used in the making of this project:
 
 Further instructions on how to install and run the [backend](https://github.com/SinugbangIsda/spring-boot-reactjs-todolist/tree/main/backend) and [frontend](https://github.com/SinugbangIsda/spring-boot-reactjs-todolist/tree/main/frontend) of this application can be found in the README files of their respective directories in the repository.
 
+# System Screenshots
+Adding a todo item:
+![0](./docs/add1.png)
+![1](./docs/add2.png)
+
+Editing a todo item:
+![0](./docs/edit1.png)
+![1](./docs/edit2.png)
+![2](./docs/edit3.png)
+
+Deleting a todo item:
+![0](./docs/delete.png)
+
 # Contributing
 Contributions are always welcome! If you find any issues or have any suggestions, please open a new issue or submit a pull request.
 
 # References
+- [Spring Boot - Build a CRUD REST API with MongoDB Atlas | JavaTechie](https://www.youtube.com/watch?v=qVNOw9TWwxo&t=1976s)
+- [Spring Boot Tutorial - Build a Rest Api with MongoDB](https://www.youtube.com/watch?v=ssj0CGxv60k&t=3164s)
+- [How To Set Up a React Project with Vite](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-react-project-with-vite)
+- [Learn React](https://www.codecademy.com/learn/react-101)
+- [TypeScript Tutorial: A step-by-step guide to learn TypeScript](https://www.educative.io/blog/typescript-tutorial)
+- [Basic Types (Typescript)](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [How to create your own custom React Hooks](https://blog.logrocket.com/create-your-own-custom-react-hooks/)
+- [Getting started with Tailwind CSS](https://v2.tailwindcss.com/docs)
