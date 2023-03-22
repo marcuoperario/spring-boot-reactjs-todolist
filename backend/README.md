@@ -11,7 +11,7 @@ This is the backend of Listify that allows users to create, read, update, and de
 # Running the Backend server
 1. Make sure you have Java 17 or higher installed on your machine.
 2. Create a new MongoDB Atlas cluster and get the connection string.
-3. Open the IntelliJ IDE
+3. Open Vistual Studio Code or the IntelliJ IDE
 4. Go to the project backend directory
 5. Update the application.properties file with your MongoDB Atlas connection string.
 6. Run the Spring Boot application with the following commands in the terminal:
