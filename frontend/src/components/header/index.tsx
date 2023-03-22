@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className = "p-4 bg-[#1D2A3B]">
       <div className = "flex justify-between items-center mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
-        <a className = "text-xl text-white font-semibold" href = "#">
+        <a className = "text-2xl text-white font-semibold" href = "#">
           Listify
         </a>
         <button 
