@@ -22,3 +22,4 @@ This is the frontend of Listify that allows users to create, read, update, and d
 ```bash
   npm run dev
 ```
+8. The app should now be running on http://localhost:5173/
